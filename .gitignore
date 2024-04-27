@@ -1,0 +1,28 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.env
+build/
+dist/
+eggs/
+*.egg-info/
+.venv/
+
+# Local development
+.vscode/
+.idea/
+*.sublime-workspace
+
+# Python virtual environments
+venv/
+env/
+
+u2net.onnx
+
+.DS_Store
