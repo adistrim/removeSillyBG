@@ -1,18 +1,14 @@
 {
     "version": 2,
-    "engines": {
-        "node": "18.x"
-    },
     "builds": [
         {
             "src": "main.py",
-            "use": "@vercel/python",
-            "config": {"runtime": "python3.9"}
+            "use": "@vercel/python"
         }
     ],
     "routes": [
         {
-            "src": "/",
+            "src": "/(.*)",
             "dest": "main.py"
         }
     ]
