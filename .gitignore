@@ -26,3 +26,4 @@ env/
 u2net.onnx
 
 .DS_Store
+.vercel

@@ -1,4 +1,5 @@
 import io
+import uvicorn
 from fastapi import FastAPI, File, UploadFile, HTTPException
 from fastapi.responses import FileResponse, StreamingResponse
 from fastapi.staticfiles import StaticFiles
@@ -33,3 +34,6 @@ async def process_image(file: UploadFile = File(...)):
     except Exception as e:
         # Handle any errors during image processing
         raise HTTPException(status_code=500, detail=f"Image processing failed: {str(e)}")
+
+if __name__ == "__main__":
+    uvicorn.run("main:app", host="0.0.0.0", port=8000, reload=True)
